@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>.red {color: red;}</style>
+</head>
+<body>
+
+<input type="text" name="name" id="name_input" value="Xxxxa">
+
+
+<script>
+  let input = document.getElementById('name_input');
+  let initialValue = input.value;
+
+  input.oninput = function () {
+      if(input.value !== initialValue) {
+          input.classList.add('red');
+      }
+      else {
+          input.classList.remove('red');
+      }
+  }
+
+</script>
+</body>
+</html>
